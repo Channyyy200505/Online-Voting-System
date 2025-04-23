@@ -1,6 +1,6 @@
 CREATE DATABASE db_dejesus_project;
 
-USE db_lastname_project;
+USE db_dejesus_project;
 
 CREATE TABLE Users (
     user_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -10,3 +10,5 @@ CREATE TABLE Users (
     phone VARCHAR(15),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+ALTER TABLE Users ADD profile_picture VARCHAR(255) DEFAULT 'default.png';
